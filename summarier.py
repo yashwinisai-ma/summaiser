@@ -38,7 +38,7 @@ def _create_tf_matrix(freq_matrix):
         tf_matrix[sent] = tf_table
     return tf_matrix
 
-#table for no of document that contains each word
+#no of document that contains each word
 def _create_documents_per_words(freq_matrix):
     word_per_doc_table = defaultdict(int)
     for f_table in freq_matrix.values():
